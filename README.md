@@ -1,6 +1,6 @@
 # LWWeChatActionSheet
 链式语法微信弹框
-<br>
+<br><br><br>
 <img height="559" width = "309" src="https://github.com/zombieEnginner/LWWeChatActionSheet/blob/master/效果.gif"/>
 
 ## 用法
