@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0F995E01F360FB20054B1EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F995DF1F360FB20054B1EF /* main.m */; };
+		D0F995E31F360FB20054B1EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F995E21F360FB20054B1EF /* AppDelegate.m */; };
+		D0F995E61F360FB20054B1EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F995E51F360FB20054B1EF /* ViewController.m */; };
+		D0F995E91F360FB20054B1EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F995E71F360FB20054B1EF /* Main.storyboard */; };
+		D0F995EB1F360FB20054B1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F995EA1F360FB20054B1EF /* Assets.xcassets */; };
+		D0F995EE1F360FB20054B1EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F995EC1F360FB20054B1EF /* LaunchScreen.storyboard */; };
+		D0F995F91F360FB20054B1EF /* LWWeChatActionSheetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F995F81F360FB20054B1EF /* LWWeChatActionSheetTests.m */; };
+		D0F996041F360FB20054B1EF /* LWWeChatActionSheetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F996031F360FB20054B1EF /* LWWeChatActionSheetUITests.m */; };
+		D0F996141F3610030054B1EF /* LWWeChatActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F996131F3610030054B1EF /* LWWeChatActionSheet.m */; };
+		D0F9961B1F3624E30054B1EF /* LWWeChatActionSheet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0F9961A1F3624E30054B1EF /* LWWeChatActionSheet.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0F995F51F360FB20054B1EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0F995D31F360FB20054B1EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0F995DA1F360FB20054B1EF;
+			remoteInfo = LWWeChatActionSheet;
+		};
+		D0F996001F360FB20054B1EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0F995D31F360FB20054B1EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0F995DA1F360FB20054B1EF;
+			remoteInfo = LWWeChatActionSheet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0F995DB1F360FB20054B1EF /* LWWeChatActionSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWWeChatActionSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F995DF1F360FB20054B1EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0F995E11F360FB20054B1EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0F995E21F360FB20054B1EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0F995E41F360FB20054B1EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D0F995E51F360FB20054B1EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D0F995E81F360FB20054B1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0F995EA1F360FB20054B1EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0F995ED1F360FB20054B1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0F995EF1F360FB20054B1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F995F41F360FB20054B1EF /* LWWeChatActionSheetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LWWeChatActionSheetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F995F81F360FB20054B1EF /* LWWeChatActionSheetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWWeChatActionSheetTests.m; sourceTree = "<group>"; };
+		D0F995FA1F360FB20054B1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F995FF1F360FB20054B1EF /* LWWeChatActionSheetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LWWeChatActionSheetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F996031F360FB20054B1EF /* LWWeChatActionSheetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWWeChatActionSheetUITests.m; sourceTree = "<group>"; };
+		D0F996051F360FB20054B1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F996121F3610030054B1EF /* LWWeChatActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWWeChatActionSheet.h; sourceTree = "<group>"; };
+		D0F996131F3610030054B1EF /* LWWeChatActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWWeChatActionSheet.m; sourceTree = "<group>"; };
+		D0F996151F3612360054B1EF /* LWWeChatActionSheetConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWWeChatActionSheetConfig.h; sourceTree = "<group>"; };
+		D0F9961A1F3624E30054B1EF /* LWWeChatActionSheet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LWWeChatActionSheet.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0F995D81F360FB20054B1EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F995F11F360FB20054B1EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F995FC1F360FB20054B1EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0F995D21F360FB20054B1EF = {
+			isa = PBXGroup;
+			children = (
+				D0F995DD1F360FB20054B1EF /* LWWeChatActionSheet */,
+				D0F995F71F360FB20054B1EF /* LWWeChatActionSheetTests */,
+				D0F996021F360FB20054B1EF /* LWWeChatActionSheetUITests */,
+				D0F995DC1F360FB20054B1EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0F995DC1F360FB20054B1EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0F995DB1F360FB20054B1EF /* LWWeChatActionSheet.app */,
+				D0F995F41F360FB20054B1EF /* LWWeChatActionSheetTests.xctest */,
+				D0F995FF1F360FB20054B1EF /* LWWeChatActionSheetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0F995DD1F360FB20054B1EF /* LWWeChatActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				D0F995E11F360FB20054B1EF /* AppDelegate.h */,
+				D0F995E21F360FB20054B1EF /* AppDelegate.m */,
+				D0F995E41F360FB20054B1EF /* ViewController.h */,
+				D0F995E51F360FB20054B1EF /* ViewController.m */,
+				D0F996111F360FCC0054B1EF /* LWWeChatActionSheet */,
+				D0F995E71F360FB20054B1EF /* Main.storyboard */,
+				D0F995EA1F360FB20054B1EF /* Assets.xcassets */,
+				D0F995EC1F360FB20054B1EF /* LaunchScreen.storyboard */,
+				D0F995EF1F360FB20054B1EF /* Info.plist */,
+				D0F995DE1F360FB20054B1EF /* Supporting Files */,
+			);
+			path = LWWeChatActionSheet;
+			sourceTree = "<group>";
+		};
+		D0F995DE1F360FB20054B1EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0F995DF1F360FB20054B1EF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0F995F71F360FB20054B1EF /* LWWeChatActionSheetTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0F995F81F360FB20054B1EF /* LWWeChatActionSheetTests.m */,
+				D0F995FA1F360FB20054B1EF /* Info.plist */,
+			);
+			path = LWWeChatActionSheetTests;
+			sourceTree = "<group>";
+		};
+		D0F996021F360FB20054B1EF /* LWWeChatActionSheetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0F996031F360FB20054B1EF /* LWWeChatActionSheetUITests.m */,
+				D0F996051F360FB20054B1EF /* Info.plist */,
+			);
+			path = LWWeChatActionSheetUITests;
+			sourceTree = "<group>";
+		};
+		D0F996111F360FCC0054B1EF /* LWWeChatActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				D0F996121F3610030054B1EF /* LWWeChatActionSheet.h */,
+				D0F996131F3610030054B1EF /* LWWeChatActionSheet.m */,
+				D0F996151F3612360054B1EF /* LWWeChatActionSheetConfig.h */,
+				D0F9961A1F3624E30054B1EF /* LWWeChatActionSheet.bundle */,
+			);
+			path = LWWeChatActionSheet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0F995DA1F360FB20054B1EF /* LWWeChatActionSheet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F996081F360FB20054B1EF /* Build configuration list for PBXNativeTarget "LWWeChatActionSheet" */;
+			buildPhases = (
+				D0F995D71F360FB20054B1EF /* Sources */,
+				D0F995D81F360FB20054B1EF /* Frameworks */,
+				D0F995D91F360FB20054B1EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LWWeChatActionSheet;
+			productName = LWWeChatActionSheet;
+			productReference = D0F995DB1F360FB20054B1EF /* LWWeChatActionSheet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0F995F31F360FB20054B1EF /* LWWeChatActionSheetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F9960B1F360FB20054B1EF /* Build configuration list for PBXNativeTarget "LWWeChatActionSheetTests" */;
+			buildPhases = (
+				D0F995F01F360FB20054B1EF /* Sources */,
+				D0F995F11F360FB20054B1EF /* Frameworks */,
+				D0F995F21F360FB20054B1EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0F995F61F360FB20054B1EF /* PBXTargetDependency */,
+			);
+			name = LWWeChatActionSheetTests;
+			productName = LWWeChatActionSheetTests;
+			productReference = D0F995F41F360FB20054B1EF /* LWWeChatActionSheetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0F995FE1F360FB20054B1EF /* LWWeChatActionSheetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F9960E1F360FB20054B1EF /* Build configuration list for PBXNativeTarget "LWWeChatActionSheetUITests" */;
+			buildPhases = (
+				D0F995FB1F360FB20054B1EF /* Sources */,
+				D0F995FC1F360FB20054B1EF /* Frameworks */,
+				D0F995FD1F360FB20054B1EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0F996011F360FB20054B1EF /* PBXTargetDependency */,
+			);
+			name = LWWeChatActionSheetUITests;
+			productName = LWWeChatActionSheetUITests;
+			productReference = D0F995FF1F360FB20054B1EF /* LWWeChatActionSheetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0F995D31F360FB20054B1EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "李伟";
+				TargetAttributes = {
+					D0F995DA1F360FB20054B1EF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4YC993Y4BN;
+						ProvisioningStyle = Manual;
+					};
+					D0F995F31F360FB20054B1EF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D0F995DA1F360FB20054B1EF;
+					};
+					D0F995FE1F360FB20054B1EF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D0F995DA1F360FB20054B1EF;
+					};
+				};
+			};
+			buildConfigurationList = D0F995D61F360FB20054B1EF /* Build configuration list for PBXProject "LWWeChatActionSheet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0F995D21F360FB20054B1EF;
+			productRefGroup = D0F995DC1F360FB20054B1EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0F995DA1F360FB20054B1EF /* LWWeChatActionSheet */,
+				D0F995F31F360FB20054B1EF /* LWWeChatActionSheetTests */,
+				D0F995FE1F360FB20054B1EF /* LWWeChatActionSheetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0F995D91F360FB20054B1EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F9961B1F3624E30054B1EF /* LWWeChatActionSheet.bundle in Resources */,
+				D0F995EE1F360FB20054B1EF /* LaunchScreen.storyboard in Resources */,
+				D0F995EB1F360FB20054B1EF /* Assets.xcassets in Resources */,
+				D0F995E91F360FB20054B1EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F995F21F360FB20054B1EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F995FD1F360FB20054B1EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0F995D71F360FB20054B1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F995E61F360FB20054B1EF /* ViewController.m in Sources */,
+				D0F995E31F360FB20054B1EF /* AppDelegate.m in Sources */,
+				D0F996141F3610030054B1EF /* LWWeChatActionSheet.m in Sources */,
+				D0F995E01F360FB20054B1EF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F995F01F360FB20054B1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F995F91F360FB20054B1EF /* LWWeChatActionSheetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F995FB1F360FB20054B1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F996041F360FB20054B1EF /* LWWeChatActionSheetUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0F995F61F360FB20054B1EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0F995DA1F360FB20054B1EF /* LWWeChatActionSheet */;
+			targetProxy = D0F995F51F360FB20054B1EF /* PBXContainerItemProxy */;
+		};
+		D0F996011F360FB20054B1EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0F995DA1F360FB20054B1EF /* LWWeChatActionSheet */;
+			targetProxy = D0F996001F360FB20054B1EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0F995E71F360FB20054B1EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0F995E81F360FB20054B1EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0F995EC1F360FB20054B1EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0F995ED1F360FB20054B1EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0F996061F360FB20054B1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0F996071F360FB20054B1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0F996091F360FB20054B1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4YC993Y4BN;
+				INFOPLIST_FILE = LWWeChatActionSheet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LWWeChatActionSheet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cb585232-0f2b-4b8e-8032-9cc6521bb2a0";
+				PROVISIONING_PROFILE_SPECIFIER = qhDoctorDevelopment;
+			};
+			name = Debug;
+		};
+		D0F9960A1F360FB20054B1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4YC993Y4BN;
+				INFOPLIST_FILE = LWWeChatActionSheet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LWWeChatActionSheet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cb585232-0f2b-4b8e-8032-9cc6521bb2a0";
+				PROVISIONING_PROFILE_SPECIFIER = qhDoctorDevelopment;
+			};
+			name = Release;
+		};
+		D0F9960C1F360FB20054B1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LWWeChatActionSheetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LWWeChatActionSheetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LWWeChatActionSheet.app/LWWeChatActionSheet";
+			};
+			name = Debug;
+		};
+		D0F9960D1F360FB20054B1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LWWeChatActionSheetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LWWeChatActionSheetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LWWeChatActionSheet.app/LWWeChatActionSheet";
+			};
+			name = Release;
+		};
+		D0F9960F1F360FB20054B1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LWWeChatActionSheetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LWWeChatActionSheetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LWWeChatActionSheet;
+			};
+			name = Debug;
+		};
+		D0F996101F360FB20054B1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LWWeChatActionSheetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LWWeChatActionSheetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LWWeChatActionSheet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0F995D61F360FB20054B1EF /* Build configuration list for PBXProject "LWWeChatActionSheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F996061F360FB20054B1EF /* Debug */,
+				D0F996071F360FB20054B1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0F996081F360FB20054B1EF /* Build configuration list for PBXNativeTarget "LWWeChatActionSheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F996091F360FB20054B1EF /* Debug */,
+				D0F9960A1F360FB20054B1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0F9960B1F360FB20054B1EF /* Build configuration list for PBXNativeTarget "LWWeChatActionSheetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F9960C1F360FB20054B1EF /* Debug */,
+				D0F9960D1F360FB20054B1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0F9960E1F360FB20054B1EF /* Build configuration list for PBXNativeTarget "LWWeChatActionSheetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F9960F1F360FB20054B1EF /* Debug */,
+				D0F996101F360FB20054B1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0F995D31F360FB20054B1EF /* Project object */;
+}
