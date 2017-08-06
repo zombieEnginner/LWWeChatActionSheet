@@ -1,7 +1,7 @@
 # LWWeChatActionSheet
 链式语法微信弹框
 <br>
-<img height="600" width = "425" src="https://github.com/zombieEnginner/LWWeChatActionSheet/blob/master/效果.gif"/>
+<img height="559" width = "309" src="https://github.com/zombieEnginner/LWWeChatActionSheet/blob/master/效果.gif"/>
 
 ## 用法
 ```objc
