@@ -33,6 +33,9 @@ LWWeChatActionSheetPropSetFuncImplementation(LWWeChatActionSheet, UIColor *, tit
 LWWeChatActionSheetPropSetFuncImplementation(LWWeChatActionSheet, UIFont *, titleTextFont);
 LWWeChatActionSheetPropSetFuncImplementation(LWWeChatActionSheet, BOOL, actionSheetAllBtnNotEnabled)
 LWWeChatActionSheetPropSetFuncImplementation(LWWeChatActionSheet, NSArray *, actionSheetBtnNotEnabledIndex)
+LWWeChatActionSheetPropSetFuncImplementation(LWWeChatActionSheet, UIColor *, actionSheetBtnSelectColor);
+LWWeChatActionSheetPropSetFuncImplementation(LWWeChatActionSheet, NSArray *, actionSheetBtnSelectIndex)
+
 
 #pragma mark - 懒加载
 
@@ -53,7 +56,8 @@ LWWeChatActionSheetPropSetFuncImplementation(LWWeChatActionSheet, NSArray *, act
         _shadowView = [[UIView alloc] init];
         [_shadowView setAlpha:0];
         [_shadowView setUserInteractionEnabled:NO];
-        [_shadowView setFrame:(CGRect){0, 0, LWWeChatActionSheet_SCREEN_SIZE}];
+//        [_shadowView setFrame:(CGRect){0, 0, LWWeChatActionSheet_SCREEN_SIZE}];
+        [_shadowView setFrame:CGRectMake(0, 0, LWWeChatActionSheet_SCREEN_SIZE.width, LWWeChatActionSheet_SCREEN_SIZE.height-kBottomHeight)];
         [_shadowView setBackgroundColor:LWWeChatActionSheet_Color(46, 49, 50)];
     }
     return _shadowView;
@@ -104,6 +108,7 @@ LWWeChatActionSheetPropSetFuncImplementation(LWWeChatActionSheet, NSArray *, act
     self.contentBtnTextFont = [UIFont systemFontOfSize:15];
     self.titleTextColor = [UIColor grayColor];
     self.titleTextFont = [UIFont systemFontOfSize:13];
+    self.actionSheetBtnSelectColor = [UIColor blueColor];
     self.cancleButtonTitle = @"取消";
     self.actionSheetAllBtnNotEnabled = NO;
 }
@@ -111,7 +116,8 @@ LWWeChatActionSheetPropSetFuncImplementation(LWWeChatActionSheet, NSArray *, act
 #pragma mark - 初始化UI
 - (void)UI
 {
-    [self setFrame:(CGRect){0, 0, LWWeChatActionSheet_SCREEN_SIZE}];
+//    [self setFrame:(CGRect){0, 0, LWWeChatActionSheet_SCREEN_SIZE}];
+    [self setFrame:CGRectMake(0, 0, LWWeChatActionSheet_SCREEN_SIZE.width, LWWeChatActionSheet_SCREEN_SIZE.height-kBottomHeight)];
     //阴影
     [self addSubview:self.shadowView];
     
@@ -140,13 +146,13 @@ LWWeChatActionSheetPropSetFuncImplementation(LWWeChatActionSheet, NSArray *, act
     NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"LWWeChatActionSheet" ofType:@"bundle"];
     if (self.contentTitles) {
         for (int i = 0; i < self.contentTitles.count; i++) {
-            UIButton *btn = [[UIButton alloc] init];
+            UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
             [btn setTag:i+LWWeChatActionSheet_BTN_TAG];
             [btn setBackgroundColor:[UIColor whiteColor]];
             [btn setTitle:self.contentTitles[i] forState:UIControlStateNormal];
             [[btn titleLabel] setFont:self.contentBtnTextFont];
             [btn setTitleColor:self.contentBtnTextColor forState:UIControlStateNormal];
-            [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+//            [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
             [btn addTarget:self action:@selector(didClick:) forControlEvents:UIControlEventTouchUpInside];
             
             if (self.actionSheetAllBtnNotEnabled) {
@@ -184,6 +190,13 @@ LWWeChatActionSheetPropSetFuncImplementation(LWWeChatActionSheet, NSArray *, act
                 btn.enabled = NO;
             }
         }
+        
+        if (self.actionSheetBtnSelectIndex.count > 0) {
+            for (int i = 0; i < self.actionSheetBtnSelectIndex.count; i++) {
+                UIButton *btn = [self.scrollView viewWithTag:[self.actionSheetBtnSelectIndex[i] integerValue]+LWWeChatActionSheet_BTN_TAG];
+                [btn setTitleColor:self.actionSheetBtnSelectColor forState:UIControlStateNormal];
+            }
+        }
     }
     
     
@@ -197,8 +210,8 @@ LWWeChatActionSheetPropSetFuncImplementation(LWWeChatActionSheet, NSArray *, act
     }
     
     if (height + 64 >= LWWeChatActionSheet_SCREEN_SIZE.height) {
-        self.contentView.frame = CGRectMake(0, LWWeChatActionSheet_SCREEN_SIZE.height, LWWeChatActionSheet_SCREEN_SIZE.width, LWWeChatActionSheet_SCREEN_SIZE.height-64);
-        self.scrollView.frame = CGRectMake(0, self.scrollView.frame.origin.y, LWWeChatActionSheet_SCREEN_SIZE.width, LWWeChatActionSheet_SCREEN_SIZE.height-64-self.titleView.frame.size.height-LWWeChatActionSheet_space-LWWeChatActionSheet_BUTTON_H);
+        self.contentView.frame = CGRectMake(0, LWWeChatActionSheet_SCREEN_SIZE.height, LWWeChatActionSheet_SCREEN_SIZE.width, LWWeChatActionSheet_SCREEN_SIZE.height-64-kBottomHeight);
+        self.scrollView.frame = CGRectMake(0, self.scrollView.frame.origin.y, LWWeChatActionSheet_SCREEN_SIZE.width, LWWeChatActionSheet_SCREEN_SIZE.height-64-self.titleView.frame.size.height-LWWeChatActionSheet_space-LWWeChatActionSheet_BUTTON_H-kBottomHeight);
     } else {
         self.contentView.frame = CGRectMake(0, LWWeChatActionSheet_SCREEN_SIZE.height, LWWeChatActionSheet_SCREEN_SIZE.width, height);
     }
@@ -250,7 +263,7 @@ LWWeChatActionSheetPropSetFuncImplementation(LWWeChatActionSheet, NSArray *, act
             [self.shadowView addGestureRecognizer:singleTap];
     
             CGRect frame = self.contentView.frame;
-            frame.origin.y -= frame.size.height;
+            frame.origin.y -= frame.size.height+kBottomHeight;
             [self.contentView setFrame:frame];
             
         } completion:nil];

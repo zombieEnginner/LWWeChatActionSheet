@@ -24,6 +24,10 @@
 //下面的间隙空白
 #define LWWeChatActionSheet_space 5.0f
 
+/* 距离底部的高度 */
+#define  kBottomHeight (iPhoneX_After ? 34 : 0)
+#define iPhoneX_After ([UIApplication sharedApplication].statusBarFrame.size.height == 44 ? YES :NO)
+
 #define LWWeChatActionSheetPropStatementAndFuncStatement(propertyModifyWord,className, propertyPointerType, propertyName)                \
 @property(nonatomic,propertyModifyWord)propertyPointerType  propertyName;                                               \
 - (className * (^) (propertyPointerType propertyName)) propertyName##Set;

@@ -24,8 +24,10 @@ LWWeChatActionSheetPropStatementAndFuncStatement(strong, LWWeChatActionSheet, UI
 LWWeChatActionSheetPropStatementAndFuncStatement(strong, LWWeChatActionSheet, UIFont *, titleTextFont);//标题字体大小，默认13
 LWWeChatActionSheetPropStatementAndFuncStatement(assign, LWWeChatActionSheet, BOOL, actionSheetAllBtnNotEnabled);//设置按钮全不能点击 默认能点击
 LWWeChatActionSheetPropStatementAndFuncStatement(strong, LWWeChatActionSheet, NSArray *, actionSheetBtnNotEnabledIndex);//设置哪些按钮不可以点击
+LWWeChatActionSheetPropStatementAndFuncStatement(strong, LWWeChatActionSheet, NSArray *, actionSheetBtnSelectIndex);//设置默认选中按钮
+LWWeChatActionSheetPropStatementAndFuncStatement(strong, LWWeChatActionSheet, UIColor *, actionSheetBtnSelectColor);//选中字的颜色，默认蓝色
 LWWeChatActionSheetFunction(copy, LWWeChatActionSheet, show);//展示界面
 
-@property(nonatomic,assign)LWWeChatActionSheetBlock actionSheetBlock;
+@property(nonatomic,copy)LWWeChatActionSheetBlock actionSheetBlock;
 
 @end

@@ -32,6 +32,7 @@
     LWWeChatActionSheet *sheet = [[LWWeChatActionSheet alloc] init];
     sheet.contentTitlesSet(@[@"分享到微信",@"QQ",@"分享到空间",@"打开相册",@"照相机"])
     .titleSet(@"选择下面的选项")
+    .contentBtnTextColorSet([UIColor blueColor])
     .show()
     .actionSheetBlock = ^(NSInteger buttonIndex) {
         NSLog(@"点击了第%ld个",buttonIndex);
@@ -79,6 +80,14 @@
 }
 
 - (IBAction)click16:(id)sender {
-    
+    LWWeChatActionSheet *sheet = [[LWWeChatActionSheet alloc] init];
+    sheet.contentTitlesSet(@[@"微信",@"QQ",@"分享到空间",@"打开相册",@"照相机"])
+    .actionSheetBtnSelectIndexSet(@[@2,@4])
+    .actionSheetBtnSelectColorSet([UIColor greenColor])
+    .cancelBtnTextColorSet([UIColor purpleColor])
+    .show()
+    .actionSheetBlock = ^(NSInteger buttonIndex) {
+        NSLog(@"点击了第%ld个",buttonIndex);
+    };
 }
 @end
